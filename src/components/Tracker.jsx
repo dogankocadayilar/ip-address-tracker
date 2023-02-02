@@ -1,6 +1,5 @@
 import styles from "./Tracker.module.css";
 import icon from "../assets/images/icon-arrow.svg";
-import { useEffect, useState } from "react";
 import useFetch from "../hooks/useFetch";
 import axios from "axios";
 
