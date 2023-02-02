@@ -1,0 +1,139 @@
+.tracker {
+  background-image: url("../assets/images/pattern-bg.png");
+  background-size: cover;
+  background-position: center;
+  z-index: 100;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 1.5em;
+  position: relative;
+  height: 45vh;
+}
+
+.heading,
+.error {
+  text-align: center;
+  font-size: 1.5rem;
+  margin: 1.2em 0;
+  font-weight: 500;
+  letter-spacing: 0.05rem;
+  color: white;
+}
+
+.inputGroup {
+  display: flex;
+  width: 100%;
+  border-radius: 15px;
+  overflow: hidden;
+}
+
+.search,
+.submit {
+  cursor: pointer;
+}
+
+.search {
+  width: 100%;
+  padding: 1em;
+  font-size: 18px;
+  text-indent: 0.25em;
+  border: none;
+}
+
+.submit {
+  border: 1px solid black;
+  width: 20%;
+  border: none;
+  background-color: black;
+}
+
+.submit:hover,
+.submit:focus {
+  background-color: var(--very-dark-gray);
+}
+
+.info {
+  width: calc(375px - 3em);
+  top: 50%;
+  z-index: 999;
+  position: absolute;
+  border-radius: 15px;
+  list-style: none;
+  padding: 1.25em 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1em;
+  background-color: white;
+  text-align: center;
+}
+
+.title {
+  color: var(--dark-gray);
+  font-size: 0.6rem;
+  font-weight: 800;
+  letter-spacing: 0.1rem;
+  text-transform: uppercase;
+}
+
+.text {
+  font-weight: 500;
+  letter-spacing: -0.01em;
+  margin-top: 0.3em;
+  font-size: 1.25rem;
+}
+
+@media screen and (min-width: 600px) {
+  .tracker {
+    height: 30vh;
+  }
+
+  .heading,
+  .error {
+    font-size: 1.85rem;
+    margin: 1em 0;
+  }
+
+  .inputGroup {
+    width: 550px;
+  }
+
+  .submit {
+    width: 10%;
+    padding: 0 2.1em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .info {
+    width: 1100px;
+    flex-direction: row;
+    top: 65%;
+    justify-content: space-between;
+    padding: 2em 1em;
+    text-align: left;
+  }
+
+  .infoItem {
+    flex: 1;
+    border-right: 1px solid lightgray;
+    padding: 0 1em;
+  }
+
+  .infoItem:last-of-type {
+    border: none;
+  }
+
+  .title {
+    font-size: 0.75rem;
+  }
+
+  .text {
+    font-weight: 500;
+    letter-spacing: -0.01em;
+    margin-top: 0.5em;
+    font-size: 1.6rem;
+  }
+}
